@@ -1,0 +1,14 @@
+a, b = input().split()
+a=int(a)
+b=int(b)
+list_1=[]
+for I in range(1,51):
+	list_1.append(I)
+k=list_1[a:b]
+if len(k)==1:
+	print(k[0],end="")
+if len(k)>1:
+	print(k[0])
+for a in range(1,len(k)-1):
+	print(k[a])
+print(k[len(k)-1],end="")
