@@ -1,0 +1,2 @@
+Rs=int(input())
+print(80*Rs,end="")
