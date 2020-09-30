@@ -1,0 +1,9 @@
+a = int(input())
+list_1=[]
+new=[]
+for w in range(1,51):
+  list_1.append(w) 
+for i in range(a,len(list_1)):
+  if list_1[i]%a==0:
+    new.append(list_1[1])
+print(len(new),end="")
