@@ -1,0 +1,8 @@
+cp=int(input())
+sp=int(input())
+if sp>cp:
+  print("Profit",end="")
+elif cp>sp:
+  print("Loss",end="")
+else:
+  print("Neither",end="")
