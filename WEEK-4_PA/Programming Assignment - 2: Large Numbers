@@ -1,0 +1,5 @@
+k=int(input())
+ans=1
+for a in range(1,k+1):
+  ans=ans*a
+print(ans, end="")
