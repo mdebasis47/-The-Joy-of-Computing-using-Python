@@ -1,0 +1,19 @@
+r,c=input().split()
+r=int(r)
+c=int(c)
+element =0
+bank=[]
+for i in range(1,r+1):
+  drop=[]
+  for j in range(1,c+1):
+    element=element+1
+    drop.append(element)
+  bank.append(drop)
+if len(bank)==1:
+  for b in range(len(bank)):
+      print(*bank[b],sep = " ",end="")	
+else:
+  for b in range(len(bank)-1):
+      print(*bank[b],sep = " ")
+  last=len(bank)-1
+  print(*bank[last],sep = " ",end="")
