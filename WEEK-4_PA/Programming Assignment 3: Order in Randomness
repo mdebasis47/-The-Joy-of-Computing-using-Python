@@ -1,0 +1,19 @@
+import random 
+n=int(input())
+list1=[]
+flag=0
+for i in range(n):
+  list1.append(int(input()))
+while(flag==0):
+    i=random.randint(0,len(list1)-1)
+    j=random.randint(0,len(list1)-1)
+    if i!=j:
+      #print("i and j before",list1[i],list1[j])
+      a=list1[i]
+      list1[i]=list1[j]
+      list1[j]=a  
+      #print("i and j after",list1[i],list1[j])
+    if(list1==sorted(list1)):
+        flag=1
+        break
+print(*list1,end="")
